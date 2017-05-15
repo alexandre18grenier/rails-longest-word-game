@@ -1,0 +1,17 @@
+
+******** Welcome to the longest word-game !********<br />
+Here is your grid :<br />
+<%= @grid %><br />
+Start time :<br />
+<%= @start_time %><br />
+
+**********************************************<br />
+What's your best shot ?<br />
+<form action="/answer" method="get">
+  <input type="text" name="word" placeholder="enter a word">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="hidden" name="grid" value="<%= @grid %>">
+  <input type="submit">
+</form>
+
+
